@@ -11,7 +11,7 @@ def directors_totals(nds)
   director_index = 0
   movie_index = 0
   
-  while director_index < directors_database.len
+  while director_index < directors_database.length
   
   p result
   
