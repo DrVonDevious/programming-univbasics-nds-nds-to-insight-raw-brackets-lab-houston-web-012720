@@ -9,10 +9,10 @@ def directors_totals(nds)
   }
   
   for director in directors_database do
-    for movie in directors_database[:director][:movies] do
-      total += directors_database[:director][:movies][:movie][:worldwide_gross]
+    for movie in directors_database[director][:movies] do
+      total += directors_database[director][:movies][movie][:worldwide_gross]
     end  
-    result[:director] = total
+    result[director] = total
   end
   
   return result
